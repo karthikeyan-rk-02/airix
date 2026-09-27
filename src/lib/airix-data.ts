@@ -11,7 +11,7 @@ export const fareRecords: FareRecord[] = routes.flatMap(([origin, destination, b
   airlines.flatMap((airline, ai) => horizons.flatMap((horizon, hi) =>
     ['2026-10-12', '2026-10-19', '2026-11-02'].map((date, di) => ({
       origin, destination, airline, horizon, date,
-      fare: Math.round((base + ai * 270 + ri * 35 + di * 110) * [0.91, 1, 1.14, 1.37, 1.72][hi] / 10) * 10,
+      fare: Math.round((base + ai * 270 + ri * 35 + di * 110) * ([0.91, 1, 1.14, 1.37, 1.72][hi] ?? 1) / 10) * 10,
     }))
   ))
 );
