@@ -1,3 +1,3 @@
-- [ ] Build the AIRIX portal sections and responsive navigation from the visual reference.
-- [ ] Implement demo explorer, glossary, charts, and both calculators.
+- [x] Build the AIRIX portal sections and responsive navigation from the visual reference.
+- [x] Implement demo explorer, glossary, charts, and both calculators.
 - [ ] Verify mobile/desktop layouts and central interactions.
