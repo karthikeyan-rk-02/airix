@@ -265,8 +265,8 @@ a { text-decoration: none; }
 }
 @media (max-width: 700px) {
   .reference-layout { padding: 39px 12px 0; }
-  .reference-grid { gap: 40px; }
-  .reference-grid > .section, .reference-grid > .intro-panel { grid-column: span 12; padding: 14px; }
+  .reference-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .reference-grid > .section, .reference-grid > .intro-panel { grid-column: 1; padding: 14px; }
   .reference-grid > .section:before, .intro-panel:before { font-size: 14px; }
   .reference-grid .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #how-it-works .grid-3, #visual-learning .grid-3 { grid-template-columns: 1fr; }
