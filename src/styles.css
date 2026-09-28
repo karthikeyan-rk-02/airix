@@ -146,7 +146,7 @@ a { text-decoration: none; }
 
 /* The supplied reference is a numbered atlas of compact dashboard panels. */
 .reference-layout { background: var(--background); padding: 38px 12px 0; }
-.reference-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 38px 12px; max-width: 1720px; margin: auto; align-items: stretch; }
+.reference-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 38px 12px; max-width: 1720px; margin: auto; align-items: stretch; min-width: 0; }
 .reference-grid > .section, .reference-grid > .intro-panel { grid-column: span 4; min-width: 0; position: relative; background: var(--card); border: 1px solid var(--highlight); border-radius: 3px; padding: 14px; scroll-margin-top: 110px; }
 .reference-grid > .section:before, .intro-panel:before { position: absolute; top: -26px; left: 0; color: var(--foreground); font: 800 15px/1.2 "Manrope", sans-serif; }
 .intro-panel:before { content: "1. Homepage"; }
@@ -280,6 +280,8 @@ a { text-decoration: none; }
   .intro-panel .hero:after { background: linear-gradient(90deg, oklch(0.18 0.06 250 / .94), oklch(0.2 0.06 250 / .2)); }
   .intro-panel .hero h1 { font-size: 50px; }
   .intro-panel .hero-actions a { font-size: 9px; }
-  .reference-grid .pipeline-step strong { font-size: 8px; }
-  .reference-grid .process-item strong { font-size: 8px; }
+  .intro-panel .pipeline { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .reference-grid .pipeline-step strong { font-size: 9px; }
+  .reference-grid .process { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .reference-grid .process-item strong { font-size: 9px; }
 }
